@@ -30,7 +30,7 @@ export default function App() {
         for (let i = 0; i < 10; i++) {
             newDice.push(generateNewDie())
         }
-        return newDice
+        return newDice;
     }
     
     function rollDice() {
@@ -38,7 +38,7 @@ export default function App() {
             setDice(oldDice => oldDice.map(die => {
                 return die.isHeld ? 
                     die :
-                    generateNewDie()
+                    generateNewDie();
             }))
         } else {
             setTenzies(false)
